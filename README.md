@@ -33,7 +33,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install Lint Dependencies
+      - name: Install Python Dependencies
         uses: RSGInc/poetry-actions
         with:
           python_version: 3.9
