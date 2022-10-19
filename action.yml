@@ -20,6 +20,7 @@ runs:
         cache: "poetry"
     - name: Install Dependencies
       run: |
+        poetry config virtualenvs.create false
         if [ -n "${{ inputs.group }}" ]
         then poetry install --only ${{ inputs.group }}
         else
