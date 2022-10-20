@@ -16,9 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install Lint Dependencies
-        uses: RSGInc/poetry-actions
+        uses: RSGInc/poetry-actions@v1
         with:
-          python_version: 3.9
+          python-version: 3.9
           group: lint
 ```
 
@@ -34,7 +34,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install Python Dependencies
-        uses: RSGInc/poetry-actions
+        uses: RSGInc/poetry-actions@v1
         with:
-          python_version: 3.9
+          python-version: 3.9
 ```
