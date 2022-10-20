@@ -29,7 +29,3 @@ runs:
         if [ -n "${{ inputs.group }}" ]
         then poetry install --no-interaction --only ${{ inputs.group }}
         fi
-
-    - name: Activate virtualenv
-      run: source .venv/bin/activate
-      shell: bash
